@@ -1,37 +1,74 @@
-# Code Review Checklist for CSC-154 Students
+# Code Review Checklist
 
-## Clarity
-- [ ] Is the code easily understandable?
-- [ ] Are variable and function names appropriate?
-- [ ] Are comments clear and helpful?
-
-## Correctness
-- [ ] Does the code work as intended?
-- [ ] Are there any edge cases that are not handled?
-- [ ] Has the code been tested sufficiently?
-
-## Style Consistency
-- [ ] Is the code formatting consistent with the project's style guide?  
-- [ ] Are functions reasonably sized?  
-- [ ] Are indentation and spacing followed correctly?  
-
-## Tests
-- [ ] Are there appropriate unit tests for the code?
-- [ ] Do the tests cover various scenarios, including edge cases?
-- [ ] Are the tests easy to run and understand?
-
-## Documentation
-- [ ] Is the code adequately documented?
-- [ ] Are the README and other relevant documents updated?
-- [ ] Is there any missing documentation that might help future developers?
-
-## Risk
-- [ ] Are there any known risks or issues?
-- [ ] Is there a plan for mitigating potential errors?
+Use this checklist when reviewing a teammate's pull request. Check off items as you go, and leave clear, constructive comments.
 
 ---
 
-### Example Reviewer Comments:
-1. "The variable names could be clearer; consider renaming `x` to `userCount` for better readability."
-2. "Great job on the tests! However, we need to add more edge cases, particularly for user input."
-3. "Consider breaking up this function into smaller pieces to improve clarity and maintainability."
+## ✓ Correctness
+
+- [ ] Does the code do what the issue/PR claims?
+- [ ] Are there any obvious bugs or logic errors?
+- [ ] Do the tests pass? (check the CI status)
+- [ ] Are error cases handled (null checks, empty inputs, etc.)?
+
+---
+
+## ✓ Clarity
+
+- [ ] Are variable and function names clear and descriptive?
+- [ ] Is the code easy to follow? (not overly complex)
+- [ ] Are there comments where the logic isn't obvious?
+- [ ] Is the code consistent with the rest of the project?
+
+---
+
+## ✓ Risk
+
+- [ ] Could this break existing features? (regression risk)
+- [ ] Are there edge cases that aren't handled?
+- [ ] Does the change affect performance or security?
+- [ ] Are dependencies or external services affected?
+
+---
+
+## ✓ Testing & Verification
+
+- [ ] Are there tests for the new code?
+- [ ] Do the tests cover happy path *and* error cases?
+- [ ] Did you run the tests locally?
+- [ ] Is there evidence in the PR that this was tested?
+
+---
+
+## ✓ Documentation
+
+- [ ] Is the README updated (if needed)?
+- [ ] Are complex functions documented with comments?
+- [ ] Are API changes documented?
+- [ ] Are there inline comments for "why," not just "what"?
+
+---
+
+## Example Review Comments
+
+### ✓ Constructive Question
+> "I see you're using a for loop here. Would a `.map()` be clearer? Just a suggestion!"
+
+### ✓ Pointing Out a Risk
+> "This works for happy path, but what happens if the API returns null? Should we add error handling here?"
+
+### ✓ Praising Good Work
+> "Nice refactor! The new function is much more readable, and you added tests for both cases. Approved!"
+
+---
+
+## Before You Approve
+
+- [ ] All checklist items above have been reviewed
+- [ ] Any blocking issues have been addressed or discussed
+- [ ] You've left at least one meaningful comment (even if just praise!)
+- [ ] You understand the change and agree it's ready
+
+---
+
+**Remember:** Be kind and professional. We're all learning!
