@@ -6,25 +6,25 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting a bug! Please fill out the details below to help us fix it.
+        Thanks for reporting a bug! Please fill out the details below so we can fix it.
   - type: textarea
     id: what_happened
     attributes:
       label: What Happened?
-      description: Clear description of the bug
-      placeholder: "e.g., The login button doesn't respond when clicked"
+      description: Describe the bug in detail
+      placeholder: "The login button doesn't respond when clicked..."
     validations:
       required: true
   - type: textarea
     id: steps_to_reproduce
     attributes:
       label: Steps to Reproduce
-      description: How can we reproduce this bug?
+      description: How do we recreate the bug?
       placeholder: |
-        1. Open the app
-        2. Navigate to the login page
-        3. Click the login button
-        4. [Bug occurs]
+        1. Navigate to /login
+        2. Enter email and password
+        3. Click "Sign In"
+        4. Button does nothing
     validations:
       required: true
   - type: textarea
@@ -32,26 +32,25 @@ body:
     attributes:
       label: Expected Behavior
       description: What should happen instead?
-      placeholder: "e.g., The login button should submit the form and redirect to the dashboard"
+      placeholder: "The user should be logged in and redirected to /dashboard"
     validations:
       required: true
   - type: textarea
-    id: screenshots_logs
+    id: screenshots
     attributes:
       label: Screenshots / Logs
-      description: Paste error messages, logs, or add screenshots
-      placeholder: "Optional: error trace, console logs, screenshots"
+      description: Any error messages, console logs, or screenshots?
+      placeholder: "Paste error logs or attach screenshots here"
     validations:
       required: false
   - type: textarea
     id: environment
     attributes:
-      label: Environment
+      label: Environment (Optional)
       description: Browser, OS, or other relevant details
       placeholder: |
-        Optional:
         - Browser: Chrome 120
-        - OS: Windows 11
+        - OS: Windows 10
         - Device: Desktop
     validations:
       required: false
