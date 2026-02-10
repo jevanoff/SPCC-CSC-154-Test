@@ -1,0 +1,47 @@
+name: Feature Request
+description: Suggest a new feature or improvement
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature! Please fill out the details below.
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: A brief, one-line description of the feature
+      placeholder: "e.g., Add dark mode toggle to settings"
+    validations:
+      required: true
+  - type: textarea
+    id: user_story
+    attributes:
+      label: User Story / Goal
+      description: |
+        Describe the problem this feature solves and what it enables.
+        Example: "As a user, I want dark mode so that I can work at night without eye strain."
+      placeholder: "As a [user type], I want [feature] so that [benefit]."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: What needs to be true for this feature to be "done"?
+      placeholder: |
+        - [ ] Toggle visible in settings menu
+        - [ ] Persists across sessions
+        - [ ] All text remains readable in dark mode
+        - [ ] Works on mobile and desktop
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Links
+      description: Any additional context, mockups, or references?
+      placeholder: "Links, screenshots, related issues, design notes..."
+    validations:
+      required: false
