@@ -1,0 +1,54 @@
+Minimum “instructor-created” GitHub items for Module 3
+
+A predictable PR practice file (so everyone edits the same safe target)
+
+Example: module-3/pr-practice.md
+
+Students each add a short response in their own section.
+
+This guarantees PR diffs are understandable and avoids random file edits.
+
+Turn order post (so PRs don’t collide)
+Pick one location:
+
+Pinned GitHub Discussion comment (“Turn Order for Module 3”), or
+
+A pinned Issue titled: Module 3 — Turn Order (PR + Reviews)
+
+It should explicitly map:
+
+“When you open PR” + “Who reviews you”
+
+Enable Discussions + create a category (if you’re hosting the discussion in GitHub)
+
+Category: Module Discussions
+
+Then post and pin the instructor starter prompt.
+
+That’s the bare minimum.
+
+Strongly recommended (takes 5 minutes, pays off all term)
+
+PR template (.github/pull_request_template.md)
+
+Forces students to write a usable PR description.
+
+Makes reviews dramatically better.
+
+Code review checklist (CODE_REVIEW_CHECKLIST.md)
+
+Gives students a structure so reviews are not fluff.
+
+These two become “training wheels” for the rest of the course.
+
+Optional (only if you want stricter enforcement)
+
+Branch protection settings tuned for the class
+
+Require PRs to merge
+
+Block direct pushes to main
+
+Optionally require 1 approval
+
+Optionally require “conversation resolved” before merge
