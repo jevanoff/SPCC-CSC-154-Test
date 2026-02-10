@@ -1,28 +1,35 @@
-# Pull Request Template
-
 ## Summary
-<!-- Brief summary of the changes made -->
 
-## Issue Link
-<!-- Link to the associated issue -->
+What changed? Why? (1–2 sentences)
 
-## What Changed
-<!-- Description of what changed in this PR -->
+## Linked Issue
+
+Closes #___  or Related to #___
 
 ## How Tested
-<!-- Description of how the changes were tested -->
 
-## Screenshots (if UI)
-<!-- Include screenshots if applicable -->
+What did you do to verify this works? (e.g., "ran tests locally," "tested in browser," "code review only")
 
-## Risks
-<!-- Potential risks associated with these changes -->
+## Screenshots (if applicable)
+
+If this changes the UI, add screenshots here.
+
+## Risks / Notes
+
+- Anything that could break?
+- Any limitations or TODOs?
+- Dependencies or gotchas?
 
 ## Reviewer Focus
-<!-- Specific areas you would like the reviewer to focus on -->
 
-## Checklist for CSC-154 Students
-- [ ] Code follows the style guidelines
-- [ ] Pull request is titled appropriately
-- [ ] Comments were added where necessary
-- [ ] Documentation has been updated (if applicable)
+What would you specifically like reviewed? (e.g., "logic in the loop," "error handling," "naming clarity")
+
+---
+
+## Checklist
+
+- [ ] Branch is not `main`
+- [ ] Linked issue included (or N/A)
+- [ ] Commit messages are clear
+- [ ] Tests pass / code review complete
+- [ ] No merge conflicts
